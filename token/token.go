@@ -37,6 +37,8 @@ const (
 	BANG      = "!"
 	ASTERISK  = "*"
 	SLASH     = "/"
+	EQ        = "=="
+	NOT_EQ    = "!="
 )
 
 var keywords = map[string]TokenType{
