@@ -12,8 +12,6 @@ const (
 	EOF       = "EOF"
 	IDENT     = "IDENT"
 	INT       = "INT"
-	ASSIGN    = "="
-	PLUS      = "+"
 	COMMA     = ","
 	SEMICOLON = ";"
 	LPAREN    = "("
@@ -22,6 +20,16 @@ const (
 	RBRACE    = "}"
 	FUNCTION  = "FUNCTION"
 	LET       = "LET"
+	LT        = "LT"
+	GT        = "GT"
+
+	// Operators
+	ASSIGN    = "="
+	PLUS      = "+"
+	MINUS     = "-"
+	BANG      = "!"
+	ASTERISK  = "*"
+	SLASH     = "/"
 )
 
 var keywords = map[string]TokenType{
