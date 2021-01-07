@@ -22,23 +22,23 @@ const (
 	GT        = "GT"
 
 	// Keywords
-	FUNCTION  = "FUNCTION"
-	LET       = "LET"
-	TRUE      = "TRUE"
-	FALSE     = "FALSE"
-	IF        = "IF"
-	ELSE      = "ELSE"
-	RETURN    = "RETURN"
+	FUNCTION = "FUNCTION"
+	LET      = "LET"
+	TRUE     = "TRUE"
+	FALSE    = "FALSE"
+	IF       = "IF"
+	ELSE     = "ELSE"
+	RETURN   = "RETURN"
 
 	// Operators
-	ASSIGN    = "="
-	PLUS      = "+"
-	MINUS     = "-"
-	BANG      = "!"
-	ASTERISK  = "*"
-	SLASH     = "/"
-	EQ        = "=="
-	NOT_EQ    = "!="
+	ASSIGN   = "="
+	PLUS     = "+"
+	MINUS    = "-"
+	BANG     = "!"
+	ASTERISK = "*"
+	SLASH    = "/"
+	EQ       = "=="
+	NOT_EQ   = "!="
 )
 
 var keywords = map[string]TokenType{
