@@ -5,8 +5,7 @@ import (
 	"testing"
 )
 
-func TestNextToken(t *testing.T) {
-	input := `let five = 5;
+var PROGRAM string = `let five = 5;
 let ten = 10;
 let add = fn(x, y) {
     x + y;
@@ -25,6 +24,8 @@ if (5 < 10) {
 10 == 10;
 10 != 9;
 `
+
+func TestNextToken(t *testing.T) {
 
 	tests := []struct {
 		expectedType    token.TokenType
@@ -106,7 +107,7 @@ if (5 < 10) {
 		{token.EOF, ""},
 	}
 
-	l := New(input)
+	l := New(PROGRAM)
 
 	for i, tt := range tests {
 		tok := l.NextToken()
